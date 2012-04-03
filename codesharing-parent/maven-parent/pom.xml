@@ -11,4 +11,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>maven-parent</name>
+  <modules>
+  	<module>maven-profile</module>
+  </modules>
 </project>
