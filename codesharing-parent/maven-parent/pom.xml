@@ -6,7 +6,7 @@
         <groupId>net.sghino.codesharing</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-  <groupId>net.sghino.codesharing</groupId>
+  <groupId>net.sghino.codesharing.maven</groupId>
   <artifactId>maven-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>

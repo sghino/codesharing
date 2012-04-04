@@ -2,9 +2,51 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>maven-parent</artifactId>
-    <groupId>net.sghino.codesharing</groupId>
+    <groupId>net.sghino.codesharing.maven</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>maven-profile</artifactId>
+  	<build>
+		<filters>
+			<filter>filters/filter-${env}.properties</filter>
+		</filters>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+			</testResource>
+		</testResources>
+	</build>
+
+	<properties>
+		<env>local</env>
+	</properties>
+	<profiles>
+		<profile>
+			<!-- per lo sviluppo in locale -->
+			<id>local</id>
+			<!-- lasciare vuoto: è il profilo di default! -->
+		</profile>
+		<profile>
+			<!-- per il continuous integration server -->
+			<id>ci-server</id>
+			<properties>
+				<env>ci-server</env>
+			</properties>
+		</profile>
+		<profile>
+			<!-- per il server di collaudo -->
+			<id>collaudo</id>
+			<properties>
+				<env>collaudo</env>
+			</properties>
+		</profile>
+	</profiles>
 </project>

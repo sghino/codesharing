@@ -1,0 +1,35 @@
+<resources>
+	<jdbc-resource jndi-name="jdbc/test-ds" pool-name="${jdbc.pool}" />
+
+	<jdbc-connection-pool name="local_database"
+		datasource-classname="org.apache.derby.jdbc.EmbeddedDataSource"
+		res-type="javax.sql.DataSource" ping="true">
+
+		<property name="DatabaseName" value="memory:testdb" />
+		<property name="ConnectionAttributes" value="create=true" />
+		<property name="DatabaseName" value="memory_derby" />
+		<property name="Password" value="" />
+		<property name="User" value="" />
+	</jdbc-connection-pool>
+
+	<jdbc-connection-pool name="ci-server_database"
+		is-isolation-level-guaranteed="false" datasource-classname="org.apache.derby.jdbc.ClientDataSource"
+		res-type="javax.sql.DataSource">
+		<property name="PortNumber" value="1527"></property>
+		<property name="Password" value=""></property>
+		<property name="User" value=""></property>
+		<property name="serverName" value="localhost"></property>
+		<property name="DatabaseName" value="sun-appserv-samples"></property>
+		<property name="connectionAttributes" value=";create=true"></property>
+	</jdbc-connection-pool>
+
+	<jdbc-connection-pool name="collaudo_database"
+		datasource-classname="org.postgresql.ds.PGConnectionPoolDataSource"
+		res-type="javax.sql.ConnectionPoolDataSource" description="javax.sql.XADataSource javax.sql.ConnectionPoolDataSource">
+		<property name="User" value=""></property>
+		<property name="DatabaseName" value="coll-db"></property>
+		<property name="Password" value=""></property>
+		<property name="ServerName" value="localhost"></property>
+		<property name="PortNumber" value="5432"></property>
+	</jdbc-connection-pool>
+</resources>
