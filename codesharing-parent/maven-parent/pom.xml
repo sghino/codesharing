@@ -8,7 +8,6 @@
     </parent>
   <groupId>net.sghino.codesharing.maven</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>maven-parent</name>
   <modules>
