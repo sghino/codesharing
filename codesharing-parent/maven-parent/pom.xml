@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
         <artifactId>codesharing-parent</artifactId>
-        <groupId>net.sghino.codesharing</groupId>
-        <version>0.1.0</version>
-    </parent>
-  <groupId>net.sghino.codesharing.maven</groupId>
+        <groupId>com.github.sghino.codesharing</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.github.sghino.codesharing.maven</groupId>
   <artifactId>maven-parent</artifactId>
   <packaging>pom</packaging>
   <name>maven-parent</name>
