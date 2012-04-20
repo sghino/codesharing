@@ -4,7 +4,7 @@
   <parent>
         <artifactId>codesharing-parent</artifactId>
         <groupId>com.github.sghino.codesharing</groupId>
-        <version>0.0.1</version>
+        <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.github.sghino.codesharing.maven</groupId>
   <artifactId>maven-parent</artifactId>

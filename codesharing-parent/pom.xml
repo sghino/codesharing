@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.sghino.codesharing</groupId>
 	<artifactId>codesharing-parent</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>codesharing-parent</name>
 	<description>The maven main core project description</description>
